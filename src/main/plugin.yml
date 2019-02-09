@@ -1,0 +1,137 @@
+#GulesBerry Technology Co. Ltd. (c) 2018-2019 Java Lib.
+#Noyark Minecraft Blog of MagicLu
+name: MBasicAggregate
+main: net.noyark.www.game.minecraft.basic.MFunCore
+version: "0.3.2"
+author: MagicLu
+api: ["1.0.7"]
+description: 一个集成小事件的普通插件
+
+permissions:
+  MFun.command.checkoff:
+    description: 关闭指令检测
+    default: op
+  MFun.command.checkon:
+    description: 打开指令检测
+    default: op
+  MFun.command.modmsg:
+    description: 修改进服提示
+    default: op
+  MFun.command.modTitle:
+    description: 修改进服提示
+    default: op
+  MFun.command.modTip:
+    description: 修改进服提示
+    default: op
+  MFun.command.flyoff:
+    description: 关闭飞行检测
+    default: op
+  MFun.command.flyon:
+    description: 打开飞行检测
+    default: op
+  MFun.command.tps:
+    description: 检测tps
+    default: op
+  MFun.command.closebc:
+    description: 关闭广播
+    default: op
+  MFun.command.openbc:
+    description: 打开广播
+    default: op
+  MFun.command.mhelp:
+    description: 获取指令表
+    default: true
+  MFun.command.qq:
+    description: 玩家提交qq
+    default: true
+  MFun.command.bw:
+    description: 添加脏话
+    default: false
+  MFun.command.takeTitle:
+    description: 设置玩家称号
+    default: op
+  MBasic.command.rb:
+    description: 红包指令
+    default: true
+  MBasic.command.sign:
+    description: 签到指令
+    default: true
+  MBasic.command.mwarp:
+    description: 传送该世界到任意规定范围内空间
+    default: true
+  MBasic.command.setmw:
+    description: 设置指定世界的任意传送范围
+    default: op
+commands:
+  checkoff:
+    description: 关闭指令检测
+    usage: "/checkoff"
+    permission: MFun.command.checkoff
+  checkon:
+    description: 打开指令检测
+    usage: "/checkon"
+    permission: MFun.command.checkon
+  modmsg:
+    description: 修改进服提示
+    usage: "/modmsg args"
+    permission: MFun.command.modmsg
+  modtitle:
+    description: 修改进服的大标题
+    usage: "/modtitle args"
+    permission: MFun.command.modtitle
+  modtip:
+    description: 修改进服的小标题
+    usage: "/modtip args"
+    permission: MFun.command.modtip
+  flyoff:
+    description: 关闭飞行检测
+    usage: "/flyoff args"
+    permission: MFun.command.flyoff
+  flyon:
+    description: 开启飞行检测
+    usage: "/flyon args"
+    permission: MFun.command.flyon
+  tps:
+    description: 检测tps
+    usage: "/tps"
+    permission: MFun.command.tps
+  closebc:
+    description: 检测tps
+    usage: "/closebc"
+    permission: MFun.command.closebc
+  openbc:
+    description: 检测tps
+    usage: "/openbc"
+    permission: MFun.command.openbc
+  mhelp:
+    description: 获取指令表
+    usage: "/mhelp"
+    permission: MFun.command.mhelp
+  qq:
+    description: 登记qq
+    usage: "/qq arg"
+    permission: MFun.command.qq
+  bw:
+    description: 添加脏话
+    usage: "/bw arg"
+    permission: MFun.command.bw
+  takeTitle:
+    description: 设置玩家称号
+    usage: "/takeTitle player title"
+    permission: MFun.command.takeTitle
+  rb:
+    description: 红包指令
+    usage: "/rb list/[money] [number]/[id]"
+    permission: MBasic.command.rb
+  sign:
+    description: 签到
+    usage: "/sign"
+    permission: MBasic.command.sign
+  mwarp:
+    description: 传送该世界到任意规定范围内空间
+    usage: "/mwarp [player]"
+    permission: MBasic.command.mwarp
+  setmw:
+    description: 设置指定世界的任意传送范围
+    usage: "/setmw [world] x y z"
+    permission: MBasic.command.setmw

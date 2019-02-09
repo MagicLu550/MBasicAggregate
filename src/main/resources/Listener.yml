@@ -1,0 +1,6 @@
+#监听器注册配置文件
+#可扩展监听器
+Listeners:
+  -net.noyark.net.Listener.BlockListener
+  -net.noyark.net.Listener.PlayerListener
+  -net.noyark.net.Listener.ServerListener
